@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ass.css">
+</head>
+<body>
+    <div class="main_nevbar">
+        <a href="./ashishweb.html" class="nevbar_options">Home</a>
+        <details class="nevbar_options">
+            <summary style="color:rgb(4, 17, 132);"><p id="neb_bar_about">About</p></summary>
+            <div class="summary_box">
+                <img src="./ashish.jpg" alt="ashish.img" class="ashish_image_inAbout">
+                <h3>
+                    Hey this is me ASHISH SINGH<br> a software engineer
+                </h3>
+            </div>    
+        </details>
+        <a href="mailto:ashish726682@gmail.com" class="nevbar_options">Contact</a>
+        <samp class="container">
+            <button id="darkModeToggle">+</button>
+        </samp>
+    </div>
+    <div class="plusMamber_login_options">
+        <a href="./ashish.html" class="plusMamber_writen">+ Login</a>
+    </div>
+    <div class="space"></div>
+        <div class="main_div_child2">
+            <img src="./ashish_body_image.jpg" alt="ashish" class="prophil_photo">
+        </div>
+        <div class="intro_profile">
+            <h2>
+                Hey this is me ASHISH a software engineer
+            </h2>
+            <p>"I'm a professional Web Developer.
+                Our Main Goal to help & Satisficed 
+                the Local & Global Clients by 
+                Web development solutions"</p>
+                <hr>
+                <h1>
+                    Language's
+                </h1>
+                <img src="./python.png" alt="python" class="python_programing">
+                <img src="./javascript.png" alt="javascript" class="python_programing" >
+                <img src="./html2.png" alt="" class="python_programing">
+                <img src="./css.jpeg" alt="" class="python_programing">
+                <img src="./mysql.png" alt="" class="python_programing">
+        </div>
+        <div class="social_mideas">
+           <a href="https://www.instagram.com/iamashishshakya_?igsh=eXkwaHhjdGpyeW93" class="social_melia"><img src="./insta.jpg" alt="instagram" class="social_media_img"></a>
+           <a href="https://www.facebook.com/ashishsingh.kushava.ass?mibextid=ZbWKwL " class="social_melia"><img src="./facebook.jpg" alt="facebook" class="insta_image"></a>
+           <a href="mailto:ashish726682@gmail.com"class="social_melia"><img src="./gmail.jpg" alt="gmail" class="social_media_img"></a>
+           <a href="https://github.com/iamashishshakya/iamashishshakya.git" class="social_melia"><img src="./github.png" alt="github" class="social_media_img"></a>
+        </div>
+        <div class="footer_detials">
+            <div class="footer_contact">
+                <h1> Contact : </h1><h1>About : </h1><h1>Address </h1>
+            </div>
+            <div class="footer_contact">
+                <a href="mailto:ashish726682@gmail.com" class="decoration"><h4>gmail : <br> ashish726682@gmail.com</h4></a>
+                <h4>Education : <br> [BCA]</h4>
+                <H4>koraon prayagraj</H4>
+            </div>
+            <div class="footer_contact">
+                <a href="https://wa.me/6394357420" class="decoration"><h4>WhatsApp-Number :-<br>6394357420</h4></a>
+                <h4>Category:<br>software engineer</h4>
+                <H4>zip-212306 <br> (uttar Pradesh)</H4>
+            </div>
+        </div>
+
+</body>
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('dark-mode', isDarkMode);
+});
+if (localStorage.getItem('dark-mode') === 'true') {
+    body.classList.add('dark-mode');
+}
+</script>
+</html>
+<samp></samp>
